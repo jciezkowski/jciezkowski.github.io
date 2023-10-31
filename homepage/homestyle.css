@@ -1,0 +1,136 @@
+.wide {
+    display: none;
+}
+
+.dropbt {
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/hamburger.png);
+    background-size: cover;
+    margin-left: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left, rgb(255, 255, 255),  rgb(123, 123, 123));
+}
+
+aside {
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: none;
+}
+
+article {
+    width: 100vw;
+    background-image: none
+}
+
+.dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dropdown-content {
+    display: none;
+    margin-top: 52px;
+    width: 100%;
+}
+
+.dropdown-content a {
+    width: 95%;
+    margin-bottom: 3px;
+    background-color: crimson;
+    border: solid black 2px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.dontshowlnp {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.asidebutton {
+    height: 10vh;
+    width: 80%;
+    background-color: lightskyblue;
+    border: solid lightgray 2px;
+    border-radius: 2px;
+}
+
+#emptydiv {
+    width: 50px;
+}
+
+#lewus {
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    border: solid white 2px;
+    border-radius: 5px;
+}
+
+@media (min-width: 630px) {
+    .wide {
+        display: block;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    #content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        justify-content: space-between;
+        position: inherit;
+        height: min-content;
+    }
+
+    aside {
+        height: auto;
+        width: 30vw;
+        display: block;
+        background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(123, 123, 123));
+    }
+
+    article {
+        width: 70vw;
+        background-image: linear-gradient(to left, rgb(255, 255, 255),  rgb(123, 123, 123));
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #lewus {
+        width: 100%;
+    }
+
+    .asidebutton {
+        width: 100%;
+        background-color: lightskyblue;
+        border: solid lightgray 2px;
+        border-radius: 2px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Łączy Nas Piłka</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="dropdown">
+            <button onclick="dropdown()" class="dropbt"></button>
+            <div id="dropdownList" class="dropdown-content">
+                <a href="../results.html">Ostatnie wyniki</a>
+                <a href="../formpage/form.html">Zostań kibicem</a>
+            </div>
+            <a href="../homepage/home.html" id="lnp">Łączy nas piłka</a>
+            <div id="emptydiv"></div>
+        </div>
+        <a href="../results.html" class="wide">Ostatnie wyniki</a>
+        <a href="../homepage/home.html" class="wide">Łączy nas piłka</a>
+        <a href="../formpage/form.html" class="wide">Zostań kibicem</a>
+    </nav>
+    <div class="formbackground">
+        <div class="formcontent">
+            <h1>Dlaczego warto zostać Kibicem?</h1>
+            <ul>
+                <li>Kibic otrzymuje informację o sprzedaży biletów wcześniej</li>
+                <li>Kibicowi przysługują znaczne zniżki przy zakupie biletów</li>
+                <li>Każdy Kibic bierze udział w comiesięcznym losowaniu, do wygrania w którym jest wiele wartościowych nagród</li>
+                <li>Rejestracja Kibica jest całkowicie darmowa</li>
+            </ul>
+            <form id="form" action="../formconfirmationpage/formconfirmation.html" method="get">
+                <h1>Zostań kibicem</h1>
+                <input type="text" class="textinput" placeholder="Imię" name="firstname" id="firstname" required><br>
+                <input type="text" class="textinput" placeholder="Nazwisko" name="lastname" id="lastname" required><br>
+                <input type="text" class="textinput" placeholder="Adres e-mail" id="mail" required><br>
+                <div class="check">
+                    <input type="checkbox" required>
+                    <label>* Oświadczam, że zapoznałem/am się z regulaminem serwisu</label> <br>
+                </div>
+                <div class="check">
+                    <input type="checkbox">
+                    <label>Oświadczam, że chcę zapisać się do newslettera</label> <br>
+                </div>
+                <button type="submit" onclick="return formValidation()">Potwierdź</button>
+                <p style="font-size: 2vh; color: rgb(147, 147, 147)">* - pole obowiązkowe</p>
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+<script src="formscript.js"></script>
+</html>
